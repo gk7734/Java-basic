@@ -8,5 +8,9 @@ public class Main {
 
     CFruit objBanana = new CFruit("바나나", 30);
     objBanana.mShow();
+
+    objMango.mEat(10);
+    objBanana.mBuy(20);
+    objApple.mEat(50);
   }
 }

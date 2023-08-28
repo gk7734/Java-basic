@@ -25,12 +25,14 @@ public class CFruit {
 
     public void mBuy(int pCnt) {
         this.mCnt += pCnt;
-        this.mShow();
+        System.out.println(String.format("과일:%s 구입수량:%d 남은양:%d", this.mName, pCnt, mCnt));
+//        this.mShow();
     }
 
     public void mEat(int pCnt) {
         this.mCnt -= pCnt;
-        this.mShow();
+        System.out.println(String.format("과일:%s 먹은개수:%d 남은양:%d", this.mName, pCnt, mCnt));
+//        this.mShow();
     }
 
     public void mShow() {
