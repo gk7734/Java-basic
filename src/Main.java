@@ -1,16 +1,18 @@
 public class Main {
   public static void main(String[] args) {
-    CFruit objApple = new CFruit("사과", 100);
-    objApple.mShow();
+    CPeople objHwanwoong = new CPeople(null, null, "환웅", 800);
+    objHwanwoong.mShow();
 
-    CFruit objMango = new CFruit("망고", 50);
-    objMango.mShow();
+    CPeople objWoongyeo = new CPeople(null, null, "웅녀", 850);
+    objWoongyeo.mShow();
 
-    CFruit objBanana = new CFruit("바나나", 30);
-    objBanana.mShow();
+    CPeople objDangoon = new CPeople(objHwanwoong, objWoongyeo, "단군", 900);
+    objDangoon.mShow();
 
-    objMango.mEat(10);
-    objBanana.mBuy(20);
-    objApple.mEat(50);
+    CPeople objBiseogab = new CPeople(null, null, "비서갑", 950);
+    objBiseogab.mShow();
+
+    CPeople objBuru = new CPeople(objDangoon, objBiseogab, "부루", 1000);
+    objBuru.mShow();
   }
 }
