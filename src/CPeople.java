@@ -48,7 +48,19 @@ public class CPeople {
         (this.mMother == null)? "없음" : this.mMother.mI, this.mI, this.mLifeSpan);
     }
 
-    public void mHistory() {
+    public void mHistory(CPeople pFather) {
+        if(pFather != null)
+            mFather.mHistory(pFather.mFather);
+
+        mShow();
+
+    }
+
+    public void mHistoryM(CPeople pMother) {
+        if(pMother != null)
+            mMother.mHistoryM(pMother.mMother);
+
+        mShow();
 
     }
 }
