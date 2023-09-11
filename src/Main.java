@@ -1,20 +1,14 @@
 public class Main {
   public static void main(String[] args) {
-    CPeople objHwanwoong = new CPeople(null, null, "환웅", 800);
-//    objHwanwoong.mShow();
+    CSchool objSchool = new CSchool("yh", "dgsw", "guji");
+    CClass obj1_2 = new CClass(objSchool, 1, 2, "윤성원");
+    CStudent objHyeongeon = new CStudent(objSchool, obj1_2, "박형언", 10, "ENTP");
+    objHyeongeon.mShow();
+    CStudent objJiwon = new CStudent(objSchool, obj1_2, "김지원", 8, "INTJ");
+    objJiwon.mShow();
 
-    CPeople objWoongyeo = new CPeople(null, null, "웅녀", 850);
-//    objWoongyeo.mShow();
-
-    CPeople objDangoon = new CPeople(objHwanwoong, objWoongyeo, "단군", 900);
-//    objDangoon.mShow();
-
-    CPeople objBiseogabMo = new CPeople(null, null, "비서갑모", 950);
-
-    CPeople objBiseogab = new CPeople(null, objBiseogabMo, "비서갑", 950);
-      objBiseogab.mHistoryM(objBiseogab.getmMother());
-
-    CPeople objBuru = new CPeople(objDangoon, objBiseogab, "부루", 1000);
-    objBuru.mHistory(objBuru.getmFather());
+    CClass obj1_1 = new CClass(objSchool, 1, 1, "김창대");
+    CStudent objMungar = new CStudent(objSchool, obj1_1, "문가인", 11, "ENTP");
+    objMungar.mShow();
   }
 }
